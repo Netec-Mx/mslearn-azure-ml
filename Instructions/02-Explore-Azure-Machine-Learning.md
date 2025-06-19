@@ -28,8 +28,10 @@ In this exercise, you'll use the Azure portal to provision Azure Machine Learnin
     - **Storage account**: *Note the default new storage account that will be created for your workspace*
     - **Key vault**: *Note the default new key vault that will be created for your workspace*
     - **Application insights**: *Note the default new application insights resource that will be created for your workspace*
-    - **Container registry**: None (*one will be created automatically the first time you deploy a model to a container*)
-5. Wait for the workspace and its associated resources to be created - this typically takes around 5 minutes.
+    - **Container registry**: None (*one will be created automatically the first time you deploy a model to a container*).
+5. Select **Review + create**.
+6. Verify your configuration passed validation, and then select **Create**
+7. Wait for the workspace and its associated resources to be created - this typically takes around 5 minutes.
 
 > **Note**: When you create an Azure Machine Learning workspace, you can use some advanced options to restrict access through a *private endpoint* and specify custom keys for data encryption. We won't use these options in this exercise - but you should be aware of them!
 
