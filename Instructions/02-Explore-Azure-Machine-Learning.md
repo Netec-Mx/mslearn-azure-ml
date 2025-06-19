@@ -24,7 +24,7 @@ In this exercise, you'll use the Azure portal to provision Azure Machine Learnin
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: `rg-dp100-labs`
     - **Workspace name**: `mlw-dp100-labs`
-    - **Region**: *Select the geographical region closest to you*
+    - **Region**: *Canada Central*
     - **Storage account**: *Note the default new storage account that will be created for your workspace*
     - **Key vault**: *Note the default new key vault that will be created for your workspace*
     - **Application insights**: *Note the default new application insights resource that will be created for your workspace*
