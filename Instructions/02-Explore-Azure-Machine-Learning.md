@@ -18,7 +18,9 @@ An Azure Machine Learning **workspace** provides a central place for managing al
 In this exercise, you'll use the Azure portal to provision Azure Machine Learning to explore all options.
 
 1. Sign into the `https://portal.azure.com/`.
-2. Create a new **Azure Machine Learning** resource with the following settings:
+2. Search for and select `Azure Machine Learning`
+3. Select **+ Create**  and then select **New workspace**.
+4. Create a new **Azure Machine Learning** resource with the following settings:
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: `rg-dp100-labs`
     - **Workspace name**: `mlw-dp100-labs`
@@ -27,7 +29,7 @@ In this exercise, you'll use the Azure portal to provision Azure Machine Learnin
     - **Key vault**: *Note the default new key vault that will be created for your workspace*
     - **Application insights**: *Note the default new application insights resource that will be created for your workspace*
     - **Container registry**: None (*one will be created automatically the first time you deploy a model to a container*)
-3. Wait for the workspace and its associated resources to be created - this typically takes around 5 minutes.
+5. Wait for the workspace and its associated resources to be created - this typically takes around 5 minutes.
 
 > **Note**: When you create an Azure Machine Learning workspace, you can use some advanced options to restrict access through a *private endpoint* and specify custom keys for data encryption. We won't use these options in this exercise - but you should be aware of them!
 
