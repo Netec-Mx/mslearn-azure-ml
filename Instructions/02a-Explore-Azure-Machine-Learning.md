@@ -11,7 +11,7 @@ Azure Machine Learning provides a data science platform to train and manage mach
 
 You'll need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative-level access.
 
-## Task1: Provision an Azure Machine Learning workspace
+## Task 1 : Provision an Azure Machine Learning workspace
 
 An Azure Machine Learning **workspace** provides a central place for managing all resources and assets you need to train and manage your models. You can provision a workspace using the interactive interface in the Azure portal, or you can use the Azure CLI with the Azure Machine Learning extension. In most production scenarios, it's best to automate provisioning with the CLI so that you can incorporate resource deployment into a repeatable development and operations (*DevOps*) process. 
 
@@ -35,7 +35,7 @@ In this exercise, you'll use the Azure portal to provision Azure Machine Learnin
 
 > **Note**: When you create an Azure Machine Learning workspace, you can use some advanced options to restrict access through a *private endpoint* and specify custom keys for data encryption. We won't use these options in this exercise - but you should be aware of them!
 
-## Task2: Explore the Azure Machine Learning studio
+## Task 2 : Explore the Azure Machine Learning studio
 
 *Azure Machine Learning studio* is a web-based portal through which you can access the Azure Machine Learning workspace. You can use the Azure Machine Learning studio to manage all assets and resources within your workspace.
 
@@ -49,7 +49,7 @@ In this exercise, you'll use the Azure portal to provision Azure Machine Learnin
 1. Note the **Assets** section, which includes **Data**, **Jobs**, and **Models** among other things. Assets are either consumed or created when training or scoring a model. Assets are used to train, deploy, and manage your models and can be versioned to keep track of your history.
 1. Note the **Manage** section, which includes **Compute** among other things. These are infrastructural resources needed to train or deploy a machine learning model.
 
-## Task:3 Train a model using AutoML
+## Task 3 : Train a model using AutoML
 
 To explore the use of the assets and resources in the Azure Machine Learning workspace, let's try and train a model.
 
@@ -86,7 +86,7 @@ A quick way to train and find the best model for a task based on your data is by
 
 1. Review all your settings and select **Submit training job**.
 
-## Task4: Use jobs to view your history
+## Task 4 : Use jobs to view your history
 
 After submitting the job, you'll be redirected to the job's page. Jobs allow you to keep track of the workloads you ran and compare them with each other. Jobs belong to an **experiment**, which allows you to group job runs together. 
 
@@ -96,7 +96,7 @@ After submitting the job, you'll be redirected to the job's page. Jobs allow you
     Azure Machine Learning automatically keeps track of your job's properties. By using jobs, you can easily view your history to understand what you or your colleagues have already done.
     During experimentation, jobs help keep track of the different models you train to compare and identify the best model. During production, jobs allow you to check whether automated workloads ran as expected.
 
-## Task5: Delete Azure resources
+## Task 5 : Delete Azure resources
 
 When you finish exploring Azure Machine Learning, you should delete the resources you've created to avoid unnecessary Azure costs.
 
