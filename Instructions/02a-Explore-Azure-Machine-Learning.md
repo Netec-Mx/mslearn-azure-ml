@@ -53,34 +53,34 @@ In this exercise, you'll use the Azure portal to provision Azure Machine Learnin
 
 To explore the use of the assets and resources in the Azure Machine Learning workspace, let's try and train a model.
 
-A quick way to train and find the best model for a task based on your data is by using the **AutoML** option.
+A quick way to train and find the best model for a task based on your data is by using the *Automated ML* option.
 
 > **Note**: Pop-ups may appear throughout to guide you through the studio. You can close and ignore all pop-ups and focus on the instructions of this lab.
 
 1. Download the training data that will be used at `https://github.com/MicrosoftLearning/mslearn-azure-ml/raw/refs/heads/main/Labs/02/diabetes-data.zip` and extract the compressed files.
-1. Back in the Azure Machine Learning studio, select the **AutoML** page from the menu on the left side of the studio.
+1. In the Azure Machine Learning studio, select the **Automated ML** page from the menu on the left side of the studio.
 1. Select **+ New Automated ML job**.
 1. In the **Basic settings** step, give a unique name to your training job and experiment or use the default values assigned. Select **Next**.
-1. In the **Task type & data** step, select **Classification** as the task type, and select **+ Create** to add your training data.
+1. In the **Task type & data** step, select **Classification** as the *task type*, and select **+ Create** to add your training data.
 2. On the **Create data asset** page, in the **Data type** step, give a name to your data asset (e.g `training-data`) and select **Next**.
 1. In the **Data source** step, select **From local files** to upload the training data you download previously. Select **Next**.
-1. In the **Destination storage type** step, verify that **Azure Blob Storage** is selected as the datastore type and that **workspaceblobstore** is the datastore selected. Select **Next**.
+1. In the **Destination storage type** step, verify that **Azure Blob Storage** is selected as the *Datastore type* and that **workspaceblobstore** is the datastore selected. Select **Next**.
 1. In the **MLTable selection** step, select **Upload folder** and select the folder you extracted from the compressed file downloaded earlier. Select **Next**.
 1. Review the settings for your data asset and select **Create**.
-1. Back in the **Task type & data** step, select the data you just uploaded and select **Next**.
+1. Back in the **Task type & data** step, select the data you just uploaded `training-data`and select **Next**.
 
 > **Tip**: You may need to select the **Classification** task type again before moving to the next step.
 
-1. In the **Task settings** step, select **Diabetic (Boolean)** as your target column, then open the **View additional configuration settings** option.
-1. In the **Additional configuration** pane, change the primary metric to **Accuracy**, then select **Save**.
-1. Expand the **Limits** option and set the following properties:
+1. In the **Task settings** step, select **Diabetic (Boolean)** as your *Target column*, then open the **View additional configuration settings** option.
+1. In the **Additional configuration** pane, change the *Primary metric* to **Accuracy**, then select **Save**.
+1. Expand the **> Limits** option and set the following properties:
     * **Max trials**: 10
     * **Experiment timeout (minutes)**: 60
     * **Iteration timeout (minutes)**: 15
     * **Enable early termination**: Checked
 
 1. For **Test data**, select **Train-test split** and verify that the **Percentage test of data** is 10. Select **Next**.
-1. In the **Compute** step, verify that the compute type is **Serveless** and the virtual machine size selected is **Standard_DS3_v2**. Select **Next**.
+1. In the **Compute** step, verify that the *compute type* is **Serveless** and the *virtual machine size* selected is **Standard_DS3_v2**. Select **Next**.
 
 > **Note**: Compute instances and clusters are based on standard Azure virtual machine images. For this exercise, the *Standard_DS3_v2* image is recommended to achieve the optimal balance of cost and performance. If your subscription has a quota that does not include this image, choose an alternative image; but bear in mind that a larger image may incur higher cost and a smaller image may not be sufficient to complete the tasks. Alternatively, ask your Azure administrator to extend your quota.
 
