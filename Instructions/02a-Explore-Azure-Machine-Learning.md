@@ -41,7 +41,7 @@ In this exercise, you'll use the Azure portal to provision Azure Machine Learnin
 
 1. Go to the resource group named **rg-dp100-labs**.
 1. Confirm that the resource group contains your `Azure Machine Learning workspace`, an `Application Insights`, a `Key Vault`, and a `Storage Account`.
-1. Select your Azure Machine Learning workspace.
+1. Select your **Azure Machine Learning workspace**.
 1. Select **Launch studio** from the **Overview** page. Another tab will open in your browser to open the Azure Machine Learning studio.
 1. Close any pop-ups that appear in the studio.
 1. Note the different pages shown on the left side of the studio. If only the symbols are visible in the menu, select the &#9776; icon to expand the menu and explore the names of the pages.
