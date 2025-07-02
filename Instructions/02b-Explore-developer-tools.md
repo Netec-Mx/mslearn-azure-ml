@@ -178,7 +178,8 @@ Now that you've verified that the necessary compute has been created, you can us
 1. Run the following command to clone a Git repository containing notebooks, data, and other files to your workspace:
 
     ```
-    git clone https://github.com/MicrosoftLearning/mslearn-azure-ml.git azure-ml-labs
+    git clone https://github.com/Netec-Mx/mslearn-azure-ml.git azure-ml-labs
+    
     ```
 
 1. When the command has completed, in the **Files** pane, select **&#8635;** to refresh the view and verify that a new **Users/*your-user-name*/azure-ml-labs** folder has been created.
