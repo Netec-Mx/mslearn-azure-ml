@@ -19,7 +19,7 @@ The commonly used developer tools for interacting with the Azure Machine Learnin
 
 You'll explore each of these tools for tasks that are commonly done with that tool.
 
-## Provision the infrastructure with the Azure CLI
+## Task 1: Provision the infrastructure with the Azure CLI
 
 For a data scientist to train a machine learning model with Azure Machine Learning, you'll need to set up the necessary infrastructure. You can use the Azure CLI with the Azure Machine Learning extension to create an Azure Machine Learning workspace and resources like a compute instance.
 
@@ -81,7 +81,7 @@ To start, open the Azure Cloud Shell, install the Azure Machine Learning extensi
     </ol>
     </details>
 
-## Create a compute instance with the Azure CLI
+## Task 2: Create a compute instance with the Azure CLI
 
 Another important part of the infrastructure needed to train a machine learning model is **compute**. Though you can train models locally, it's more scalable and cost efficient to use cloud compute.
 
@@ -118,7 +118,7 @@ In this exercise, you'll create a compute instance with the following settings:
     </ol>
     </details>
 
-## Create a compute cluster with the Azure CLI
+## Task 3: Create a compute cluster with the Azure CLI
 
 Though a compute instance is ideal for development, a compute cluster is better suited when we want to train machine learning models. Only when a job is submitted to use the compute cluster, will it resize to more than 0 nodes and run the job. Once the compute cluster is no longer needed, it will automatically resize back to 0 nodes to minimize costs. 
 
@@ -152,20 +152,20 @@ You'll create a compute cluster with the following settings:
     </ol>
     </details>
 
-## Configure your workstation with the Azure Machine Learning studio
+## Task 4: Configure your workstation with the Azure Machine Learning studio
 
 Though the Azure CLI is ideal for automation, you may want to review the output of the commands you executed. You can use the Azure Machine Learning studio to check whether resources and assets have been created, and to check whether jobs ran successfully or review why a job failed. 
 
 1. In the Azure portal, navigate to the Azure Machine Learning workspace named **mlw-dp100-labs**.
 1. Select the Azure Machine Learning workspace, and in its **Overview** page, select **Launch studio**. Another tab will open in your browser to open the Azure Machine Learning studio.
 1. Close any pop-ups that appear in the studio.
-1. Within the Azure Machine Learning studio, navigate to the **Compute** page and verify that the compute instance and cluster you created in the previous section exist. The compute instance should be running, the cluster should be in Succeeded state and have 0 nodes running.
+1. Within the Azure Machine Learning studio, navigate to the **Compute** page and verify that the tab *Compute instance* and *Compute clusters* you created in the previous section exist. The compute instance should be running, the cluster should be in Succeeded state and have 0 nodes running.
 
-## Use the Python SDK to train a model
+## Task 5: Use the Python SDK to train a model
 
-Now that you've verified that the necessary compute has been created, you can use the Python SDK to run a training script. You'll install and use the Python SDK on the compute instance and train the machine learning model on the compute cluster.
+Now that you've verified that the necessary compute has been created, you can use the Python SDK to **run** a *training script*. You'll install and use the Python SDK on the *compute instance* and train the machine learning model on the *compute cluster*.
 
-1. In your **compute instance**, there are a number of options in the **Applications** field. Select the **Terminal** application to launch the terminal (you may need to click the ellipsis to expand the selection).
+1. Select your link **compute instance**, there are a number of options in the section **Applications** field. Select the **Terminal** application to launch the terminal (you may need to click the ellipsis to expand the selection).
 1. In the terminal, install the Python SDK on the compute instance by running the following commands in the terminal:
 
     ```
@@ -191,7 +191,7 @@ Now that you've verified that the necessary compute has been created, you can us
 
 A new job will be created in the Azure Machine Learning workspace. The job tracks the inputs defined in the job configuration, the code used, and the outputs like metrics to evaluate the model.
 
-## Review your job history in the Azure Machine Learning studio
+## Task 6: Review your job history in the Azure Machine Learning studio
 
 When you submit a job to the Azure Machine Learning workspace, you can review its status in the Azure Machine Learning studio.
 
@@ -207,7 +207,7 @@ When you submit a job to the Azure Machine Learning workspace, you can review it
 1. Under **Outputs + logs**, you'll find the output of the script in **user_logs/std_log.txt**. Outputs from **print** statements in the script will show here. If there's an error because of a problem with your script, you'll find the error message here too.
 1. Under **Code**, you'll find the folder you specified in the job configuration. This folder includes the training script and dataset.
 
-## Delete Azure resources
+## Task 7: Delete Azure resources
 
 When you finish exploring Azure Machine Learning, you should delete the resources you've created to avoid unnecessary Azure costs.
 
