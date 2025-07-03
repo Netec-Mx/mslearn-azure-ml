@@ -143,7 +143,7 @@ The code to **create** a *datastore* and *data assets* with the Python SDK is pr
 
 **Optionally**, you can explore how the *data assets* are stored in the associated Storage Account.
 
-1. Navigate to the **Data** tab in the Azure Machine Learning studio to explore the *data assets*.
+1. Select **Data** from the left menu Navigate to the **Data assets** tab in the Azure Machine Learning studio to explore the *data assets*.
 1. Select the **diabetes-local** data asset name to explore its details. 
 
     Under **Data sources** for the **diabetes-local** data asset, you'll find where the file has been uploaded to. The path starting with **LocalUpload/...** shows the path within the Storage Account container **azureml-blobstore-...**. You can verify the file exists by navigating to that path in the Azure portal.
