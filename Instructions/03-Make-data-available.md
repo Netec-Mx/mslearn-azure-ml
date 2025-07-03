@@ -130,7 +130,7 @@ To create a datastore and data assets with the Python SDK, you'll need to clone 
 
 ## Task 5: Create a datastore and data assets
 
-The code to **create** a datastore and data assets with the Python SDK is provided in a notebook.
+The code to **create** a *datastore* and *data assets* with the Python SDK is provided in a notebook.
 
 1. Open the **Labs/03/Work with data.ipynb** notebook.
 
