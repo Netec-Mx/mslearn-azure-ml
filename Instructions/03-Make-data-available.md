@@ -9,9 +9,6 @@ Although it's fairly common to work with data on their local file system, in an 
 
 In this exercise, you'll explore *datastores* and *data assets*, which are the primary objects used to abstract data access in Azure Machine Learning.
 
-## Before you start
-
-You'll need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative-level access.
 
 ## Provision an Azure Machine Learning workspace
 
