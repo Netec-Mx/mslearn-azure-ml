@@ -137,7 +137,7 @@ The code to **create** a *datastore* and *data assets* with the Python SDK is pr
     > Select **Authenticate** and follow the necessary steps if a notification appears asking you to authenticate.
 
 1. Verify that the notebook uses the **Python 3.10 - AzureML** kernel.
-1. Run all cells in the notebook.
+1. **Run** all *cells* in the notebook.
 
 ## Task 6: Optional: Explore the data assets
 
