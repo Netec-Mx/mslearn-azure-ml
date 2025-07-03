@@ -78,12 +78,12 @@ To create the Azure Machine Learning workspace and compute resources, you'll use
 When you create an Azure Machine Learning workspace, a Storage Account is automatically created and connected to your workspace. You'll explore how the Storage Account is connected.
 
 1. In the Azure portal, navigate to the new resource group named **rg-dp100-...**.
-1. Select the Storage Account in the resource group. The name often starts with the name you provided for the workspace (without hyphens).
-1. Review the **Overview** page of the Storage Account. Note that the Storage Account has several options for **Data storage** as shown in the Overview pane, and in the left menu.
-1. Select **Containers** to explore the Blob storage part of the Storage Account.
+1. Select the **Storage Account** in the resource group. The name often starts with the name you provided for the workspace (without hyphens).
+1. Review the **Overview** page of the *Storage Account*. Note that the Storage Account has several options for **Data storage** as shown in the Overview pane, and in the left menu.
+1. Select **Containers** to explore the *Blob storage* part of the Storage Account.
 1. Note the **azureml-blobstore-...** container. The default datastore for data assets uses this container to store data.
-1. Using the &#43; **Container** button at the top of the screen, create a new container and name it `training-data`.
-1. Select **File shares** from the left menu to explore the File share part of the Storage Account.
+1. Using the &#43; **Container** button at the top of the screen, **create** a new *container* and name it `training-data`.
+1. Select **File shares** from the left menu to explore the *File share* part of the Storage Account.
 1. Note the **code-...** file share. Any notebooks in the workspace are stored here. After cloning the lab materials, you can find the files in this file share, in the **code-.../Users/*your-user-name*/azure-ml-labs** folder.
 
 ## Task 3: Copy the access key
