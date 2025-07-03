@@ -13,13 +13,13 @@ In this exercise, you'll explore *datastores* and *data assets*, which are the p
 
 You'll need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative-level access.
 
-## Provision an Azure Machine Learning workspace
+## Task 1: Provision an Azure Machine Learning workspace
 
 An Azure Machine Learning *workspace* provides a central place for managing all resources and assets you need to train and manage your models. You can interact with the Azure Machine Learning workspace through the studio, Python SDK, and Azure CLI.
 
 You'll use a Shell script which uses the Azure CLI to provision the workspace and necessary resources. Next, you'll use the Designer in the Azure Machine Learning studio to train and compare models.
 
-### Create the workspace and compute resources
+### Task 2: Create the workspace and compute resources
 
 To create the Azure Machine Learning workspace and compute resources, you'll use the Azure CLI. All necessary commands are grouped in a Shell script for you to execute.
 
@@ -76,7 +76,7 @@ To create the Azure Machine Learning workspace and compute resources, you'll use
     </ol>
     </details>
 
-## Explore the default datastores
+## Task 3: Explore the default datastores
 
 When you create an Azure Machine Learning workspace, a Storage Account is automatically created and connected to your workspace. You'll explore how the Storage Account is connected.
 
@@ -89,7 +89,7 @@ When you create an Azure Machine Learning workspace, a Storage Account is automa
 1. Select **File shares** from the left menu to explore the File share part of the Storage Account.
 1. Note the **code-...** file share. Any notebooks in the workspace are stored here. After cloning the lab materials, you can find the files in this file share, in the **code-.../Users/*your-user-name*/azure-ml-labs** folder.
 
-## Copy the access key
+## Task 4: Copy the access key
 
 To create a datastore in the Azure Machine Learning workspace, you need to provide some credentials. An easy way to provide the workspace with access to a Blob storage is to use the account key.
 
@@ -102,7 +102,7 @@ To create a datastore in the Azure Machine Learning workspace, you need to provi
 > **Note**:
 > Copy the account key and name to a notepad to avoid automatic capitalization (which happens in Word). The key is case-sensitive.
 
-## Clone the lab materials
+## Task 5: Clone the lab materials
 
 To create a datastore and data assets with the Python SDK, you'll need to clone the lab materials into the workspace.
 
@@ -142,7 +142,7 @@ The code to create a datastore and data assets with the Python SDK is provided i
 1. Verify that the notebook uses the **Python 3.10 - AzureML** kernel.
 1. Run all cells in the notebook.
 
-## Optional: Explore the data assets
+##  Task 6: Optional: Explore the data assets
 
 **Optionally**, you can explore how the data assets are stored in the associated Storage Account.
 
@@ -151,7 +151,7 @@ The code to create a datastore and data assets with the Python SDK is provided i
 
     Under **Data sources** for the **diabetes-local** data asset, you'll find where the file has been uploaded to. The path starting with **LocalUpload/...** shows the path within the Storage Account container **azureml-blobstore-...**. You can verify the file exists by navigating to that path in the Azure portal.
 
-## Delete Azure resources
+## Task 7: Delete Azure resources
 
 When you finish exploring Azure Machine Learning, you should delete the resources you've created to avoid unnecessary Azure costs.
 
