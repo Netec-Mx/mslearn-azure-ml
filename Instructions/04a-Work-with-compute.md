@@ -9,11 +9,8 @@ One of the key benefits of the cloud is the ability to use scalable, on-demand c
 
 In this exercise, you'll learn how to use cloud compute in Azure Machine Learning to run experiments and production code at scale.
 
-## Before you start
 
-You'll need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative-level access.
-
-## Provision an Azure Machine Learning workspace
+## Task 1: Provision an Azure Machine Learning workspace
 
 An Azure Machine Learning *workspace* provides a central place for managing all resources and assets you need to train and manage your models. You can interact with the Azure Machine Learning workspace through the studio, Python SDK, and Azure CLI.
 
@@ -75,7 +72,7 @@ To create the Azure Machine Learning workspace, you'll use the Azure CLI. All ne
     </ol>
     </details>
 
-## Create the compute setup script
+## Task 2: Create the compute setup script
 
 To run notebooks within the Azure Machine Learning workspace, you'll need a compute instance. You can use a setup script to configure the compute instance on creation.
 
@@ -99,7 +96,7 @@ To run notebooks within the Azure Machine Learning workspace, you'll need a comp
 
 1. Save the **compute-setup.sh** file.
 
-## Create the compute instance
+## Task 3: Create the compute instance
 
 To create the compute instance, you can use the studio, Python SDK, or Azure CLI. You'll use the studio to create the compute instance with the setup script you just created.
 
@@ -122,7 +119,7 @@ To create the compute instance, you can use the studio, Python SDK, or Azure CLI
 1. Select **Review + Create** to create the compute instance and wait for it to start and its state to change to **Running**.
 1. When the compute instance is running, navigate to the **Notebooks** page. In the **Files** pane, click **&#8635;** to refresh the view and verify that a new **Users/*your-user-name*/dp100-azure-ml-labs** folder has been created.
 
-## Configure the compute instance
+## Task 4: Configure the compute instance
 
 When you've created the compute instance, you can run notebooks on it. You may need to install certain packages to run the code you want. You can include packages in the setup script, or install them using the terminal.
 
@@ -138,7 +135,7 @@ When you've created the compute instance, you can run notebooks on it. You may n
 
 1. When the packages are installed, you can close the tab to terminate the terminal.
 
-## Create a compute cluster
+## Task 5: Create a compute cluster
 
 Notebooks are ideal for development or iterative work during experimentation. When experimenting, you'll want to run notebooks on a compute instance to quickly test and review code. When moving to production, you'll want to run scripts on a compute cluster. You'll create a compute cluster with the Python SDK, and then use it to run a script as a job.
 
@@ -149,7 +146,7 @@ Notebooks are ideal for development or iterative work during experimentation. Wh
 1. Verify that the notebook uses the **Python 3.10 - AzureML** kernel.
 1. Run all cells in the notebook.
 
-## Delete Azure resources
+## Task 6: Delete Azure resources
 
 When you finish exploring Azure Machine Learning, you should delete the resources you've created to avoid unnecessary Azure costs.
 
