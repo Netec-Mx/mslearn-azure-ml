@@ -94,7 +94,7 @@ To run notebooks within the Azure Machine Learning workspace, you'll need a comp
     #!/bin/bash
 
     # clone repository
-    git clone https://github.com/MicrosoftLearning/mslearn-azure-ml.git azure-ml-labs
+    git clone https://github.com/Netec-Mx/mslearn-azure-ml.git azure-ml-labs
     ```
 
 1. Save the **compute-setup.sh** file.
