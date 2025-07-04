@@ -84,7 +84,7 @@ To run notebooks within the Azure Machine Learning workspace, you'll need a comp
 1. Select **Create new file**.
 1. Verify that the file location is **Users/*your-user-name***.
 1. Change the file type to **Bash (*.sh)**.
-1. Change the file name to `compute-setup.sh`.
+1. Change the file name to `compute-setup.sh` and select **Create**.
 1. Open the newly created **compute-setup.sh** file and paste the following to its content:
 
     ```azurecli
