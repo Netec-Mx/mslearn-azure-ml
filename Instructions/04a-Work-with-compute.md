@@ -123,8 +123,8 @@ To create the compute instance, you can use the studio, Python SDK, or Azure CLI
 
 When you've created the compute instance, you can run notebooks on it. You may need to install certain packages to run the code you want. You can include packages in the setup script, or install them using the terminal.
 
-1. In the **Compute instances** tab, find your compute instance, and select the **Terminal** application.
-1. In the terminal, install the Python SDK on the compute instance by running the following commands in the terminal:
+1. Select **Compute** from the left menu Navigate to the **Compute instances** tab, find your compute instance, and select the **Terminal** application.
+1. In the *terminal*, install the Python SDK on the compute instance by running the following commands in the terminal:
 
     ```
     pip uninstall azure-ai-ml
