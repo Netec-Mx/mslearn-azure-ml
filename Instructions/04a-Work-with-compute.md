@@ -102,7 +102,7 @@ To create the compute instance, you can use the studio, Python SDK, or Azure CLI
 
 1. Navigate to the **Compute** page, using the menu on the left.
 1. In the **Compute instances** tab, select **+ New**.
-1. Configure (don't create yet) the compute instance with the following settings: 
+1. Configure (**don't create yet**) the compute instance with the following settings: 
     - **Compute name**: *enter a unique name*
     - **Virtual machine type**: *CPU*
     - **Virtual machine size**: *Standard_DS11_v2*
