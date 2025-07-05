@@ -18,10 +18,10 @@ You'll use the Azure CLI to provision the workspace and necessary compute, and y
 
 ### Task 1: Create the workspace and compute resources
 
-To create the Azure Machine Learning workspace and compute resources, you'll use the Azure CLI. All necessary commands are grouped in a Shell script for you to execute.
+To create the Azure Machine Learning workspace and compute resources, you'll use the Azure CLI. All necessary commands are grouped in a **Shell** script for you to execute.
 
 1. In a browser, open the Azure portal at `https://portal.azure.com/`, signing in with your Microsoft account.
-1. Select the \[>_] (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
+1. Select the \[>_] (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a **Cloud Shell** pane at the bottom of the portal.
 1. Select **Bash** if asked. The first time you open the cloud shell, you will be asked to choose the type of shell you want to use (*Bash* or *PowerShell*).
 1. Check that the correct subscription is specified and that **No storage account required** is selected. Select **Apply**.
 1. In the terminal, enter the following commands to clone this repo:
@@ -75,12 +75,12 @@ To create the Azure Machine Learning workspace and compute resources, you'll use
 
 ## Task 2: Clone the lab materials
 
-When you've created the workspace and necessary compute resources, you can open the Azure Machine Learning studio and clone the lab materials. 
+When you've created the workspace and necessary compute resources, you can open the *Azure Machine Learning studio* and **clone** the lab materials. 
 
-1. In the Azure portal, navigate to the Azure Machine Learning workspace named **mlw-dp100-...**.
-1. Select the Azure Machine Learning workspace, and in its **Overview** page, select **Launch studio**. Another tab will open in your browser to open the Azure Machine Learning studio.
+1. In the Azure portal, **navigate** to the Azure Machine Learning workspace named **mlw-dp100-...**.
+1. Select the *Azure Machine Learning workspace*, and in its **Overview** page, select **Launch studio**. Another tab will open in your browser to open the Azure Machine Learning studio.
 1. Close any pop-ups that appear in the studio.
-1. Within the Azure Machine Learning studio, navigate to the **Compute** page and verify that the compute instance and cluster you created in the previous section exist. The compute instance should be running, the cluster should be idle and have 0 nodes running.
+1. Within the Azure Machine Learning studio, **navigate** to the **Compute** page and verify that the *compute instance* and *cluster* you created in the previous section exist. The compute instance should be **running**, the cluster should be idle and have 0 nodes running.
 1. In the **Compute instances** tab, find your compute instance, and select the **Terminal** application.
 1. In the terminal, install the Python SDK on the compute instance by running the following commands in the terminal:
 
@@ -91,13 +91,13 @@ When you've created the workspace and necessary compute resources, you can open 
 
     > Ignore any (error) messages that say that the packages couldn't be found and uninstalled.
 
-1. Run the following command to clone a Git repository containing notebooks, data, and other files to your workspace:
+1. **Run** the following command to *clone* a Git repository containing notebooks, data, and other files to your workspace:
 
     ```
     git clone https://github.com/Netec-Mx/mslearn-azure-ml.git azure-ml-labs
     ```
 
-1. When the command has completed, in the **Files** pane, click **&#8635;** to refresh the view and verify that a new **Users/*your-user-name*/azure-ml-labs** folder has been created.
+1. When the command has *completed*, in the **Files** pane, click **&#8635;** to refresh the view and verify that a new **Users/*your-user-name*/azure-ml-labs** folder has been created.
 
 ## Task 3: Work with environments
 
@@ -108,11 +108,11 @@ The code to create and manage environments with the Python SDK is provided in a 
     > Select **Authenticate** and follow the necessary steps if a notification appears asking you to authenticate.
 
 1. Verify that the notebook uses the **Python 3.10 - AzureML** kernel.
-1. Run all cells in the notebook.
+1. **Run** all *cells* in the notebook.
 
 ## Task 4: Delete Azure resources
 
-When you finish exploring Azure Machine Learning, you should delete the resources you've created to avoid unnecessary Azure costs.
+When you **finish** exploring Azure Machine Learning, you should **delete** the resources you've created to avoid *unnecessary Azure costs*.
 
 1. Close the Azure Machine Learning studio tab and return to the Azure portal.
 1. In the Azure portal, on the **Home** page, select **Resource groups**.
