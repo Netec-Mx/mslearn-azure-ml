@@ -9,9 +9,6 @@ To run notebooks and scripts, you must ensure that the required packages are ins
 
 In this exercise, you will learn about environments and how to use them when training machine learning models with Azure Machine Learning compute.
 
-## Before you start
-
-You'll need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative-level access.
 
 ## Provision an Azure Machine Learning workspace
 
@@ -19,7 +16,7 @@ An Azure Machine Learning *workspace* provides a central place for managing all 
 
 You'll use the Azure CLI to provision the workspace and necessary compute, and you'll use the Python SDK to train a classification model with Automated Machine Learning.
 
-### Create the workspace and compute resources
+### Task 1: Create the workspace and compute resources
 
 To create the Azure Machine Learning workspace and compute resources, you'll use the Azure CLI. All necessary commands are grouped in a Shell script for you to execute.
 
@@ -76,7 +73,7 @@ To create the Azure Machine Learning workspace and compute resources, you'll use
     </ol>
     </details>
 
-## Clone the lab materials
+## Task 2: Clone the lab materials
 
 When you've created the workspace and necessary compute resources, you can open the Azure Machine Learning studio and clone the lab materials. 
 
@@ -102,7 +99,7 @@ When you've created the workspace and necessary compute resources, you can open 
 
 1. When the command has completed, in the **Files** pane, click **&#8635;** to refresh the view and verify that a new **Users/*your-user-name*/azure-ml-labs** folder has been created.
 
-## Work with environments
+## Task 3: Work with environments
 
 The code to create and manage environments with the Python SDK is provided in a notebook.
 
@@ -113,7 +110,7 @@ The code to create and manage environments with the Python SDK is provided in a 
 1. Verify that the notebook uses the **Python 3.10 - AzureML** kernel.
 1. Run all cells in the notebook.
 
-## Delete Azure resources
+## Task 4: Delete Azure resources
 
 When you finish exploring Azure Machine Learning, you should delete the resources you've created to avoid unnecessary Azure costs.
 
