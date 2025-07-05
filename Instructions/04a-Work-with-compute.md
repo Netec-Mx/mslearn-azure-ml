@@ -74,7 +74,7 @@ To create the Azure Machine Learning workspace, you'll use the Azure CLI. All ne
 
 ## Task 2: Create the compute setup script
 
-To run notebooks within the Azure Machine Learning workspace, you'll need a compute instance. You can use a setup script to configure the compute instance on creation.
+To run notebooks within the *Azure Machine Learning workspace*, you'll need a compute instance. You can use a setup script to configure the compute instance on creation.
 
 1. In the Azure portal, navigate to the Azure Machine Learning workspace named **mlw-dp100-labs**.
 1. Select the Azure Machine Learning workspace, and in its **Overview** page, select **Launch studio**. Another tab will open in your browser to open the Azure Machine Learning studio.
@@ -98,7 +98,7 @@ To run notebooks within the Azure Machine Learning workspace, you'll need a comp
 
 ## Task 3: Create the compute instance
 
-To create the compute instance, you can use the studio, Python SDK, or Azure CLI. You'll use the studio to create the compute instance with the setup script you just created.
+To create the *compute instance*, you can use the studio, Python SDK, or Azure CLI. You'll use the studio to create the compute instance with the setup script you just created.
 
 1. Navigate to the **Compute** page, using the menu on the left.
 1. In the **Compute instances** tab, select **+ New**.
@@ -109,19 +109,19 @@ To create the compute instance, you can use the studio, Python SDK, or Azure CLI
 1. Select **Next**.
 1. Select **Add schedule** and configure the schedule to **stop** the compute instance every day at **18:00** or **6:00 PM**.
 1. Select **Next**.
-1. Review the security settings but do **not** select them:
+1. **Review** the security settings but do **not** select them:
     - **Enable SSH access**: *You can use this to enable direct access to the virtual machine using an SSH client.*
     - **Enable virtual network**: *You would typically use this in an enterprise environment to enhance network security.*
     - **Assign to another user**: *You can use this to assign a compute instance to another data scientist.*
 1. Select **Next**.
 1. Select the toggle for **Provision with a creation script**.
 1. Select the **compute-setup.sh** script you created previously.
-1. Select **Review + Create** to create the compute instance and wait for it to start and its state to change to **Running**.
-1. When the compute instance is running, navigate to the **Notebooks** page. In the **Files** pane, click **&#8635;** to refresh the view and verify that a new **Users/*your-user-name*/dp100-azure-ml-labs** folder has been created.
+1. Select **Review + Create** and then select **Create** to create the compute instance and wait for it to start and its state to change to **Running**.
+1. When the compute instance is running, navigate to the **Notebooks** page. In the **Files** pane, click **&#8635;** to refresh the view and verify that a new **Users/*your-user-name*/azure-ml-labs** folder has been created.
 
 ## Task 4: Configure the compute instance
 
-When you've created the compute instance, you can run notebooks on it. You may need to install certain packages to run the code you want. You can include packages in the setup script, or install them using the terminal.
+When you've created the compute instance, you can **run** notebooks on it. You may need to install certain packages to run the code you want. You can include packages in the setup script, or install them using the terminal.
 
 1. Select **Compute** from the left menu Navigate to the **Compute instances** tab, find and choose your *compute instance*, and select the **Terminal** application.
 1. In the *terminal*, install the Python SDK on the compute instance by running the following commands in the terminal:
@@ -133,7 +133,7 @@ When you've created the compute instance, you can run notebooks on it. You may n
 
     > Ignore any (error) messages that say that the packages were not installed.
 
-1. When the packages are installed, you can close the tab to terminate the terminal.
+1. When the packages are installed, you can **close** the tab to terminate the terminal.
 
 ## Task 5: Create a compute cluster
 
@@ -148,7 +148,7 @@ Notebooks are ideal for development or iterative work during experimentation. Wh
 
 ## Task 6: Delete Azure resources
 
-When you finish exploring Azure Machine Learning, you should delete the resources you've created to avoid unnecessary Azure costs.
+When you **finish** exploring *Azure Machine Learning*, you should **delete** the resources you've created to *avoid unnecessary Azure costs*.
 
 1. Close the Azure Machine Learning studio tab and return to the Azure portal.
 1. In the Azure portal, on the **Home** page, select **Resource groups**.
