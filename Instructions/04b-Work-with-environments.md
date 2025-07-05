@@ -28,7 +28,7 @@ To create the Azure Machine Learning workspace and compute resources, you'll use
 
     ```azurecli
     rm -r azure-ml-labs -f
-    git clone https://github.com/MicrosoftLearning/mslearn-azure-ml.git azure-ml-labs
+    git clone https://github.com/Netec-Mx/mslearn-azure-ml.git azure-ml-labs
     ```
 
     > Use `SHIFT + INSERT` to paste your copied code into the Cloud Shell.
