@@ -9,9 +9,6 @@ Azure Machine Learning Designer provides a drag and drop interface with which yo
 
 In this exercise, you'll use the Designer to quickly train and compare two classification algorithms.
 
-## Before you start
-
-You'll need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative-level access.
 
 ## Provision an Azure Machine Learning workspace
 
@@ -19,7 +16,7 @@ An Azure Machine Learning *workspace* provides a central place for managing all 
 
 You'll use a Shell script which uses the Azure CLI to provision the workspace and necessary resources. Next, you'll use the Designer in the Azure Machine Learning studio to train and compare models.
 
-### Create the workspace and compute cluster
+###  Task1:  Create the workspace and compute cluster
 
 To create the Azure Machine Learning workspace and a compute cluster, you'll use the Azure CLI. All necessary commands are grouped in a Shell script for you to execute.
 
@@ -76,7 +73,7 @@ To create the Azure Machine Learning workspace and a compute cluster, you'll use
     </ol>
     </details>
 
-## Configure a new pipeline
+## Task2:  Configure a new pipeline
 
 When you've created the workspace and necessary compute cluster, you can open the Azure Machine Learning studio and create a training pipeline with the Designer.
 
@@ -90,7 +87,7 @@ When you've created the workspace and necessary compute cluster, you can open th
 1. Change the default pipeline name (**Pipeline-Created-on-*date***) to `Train-Diabetes-Classifier` by selecting the pencil icon on its right.
 
 
-## Create a new pipeline
+## Task3:  Create a new pipeline
 
 To train a model, you'll need data. You can use any data stored in a datastore or use a publicly accessible URL.
 
@@ -117,7 +114,7 @@ To train a model, you'll need data. You can use any data stored in a datastore o
 
 You'll be able to track the run of each component. When the pipeline fails, you'll be able to explore which component failed and why it failed. Error messages will show in the **Outputs + logs** tab of the job overview.
 
-## Train a second model to compare
+## Task4:  Train a second model to compare
 
 To compare between algorithms and evaluate which performs better, you can train two models within one pipeline and compare.
 
@@ -132,7 +129,7 @@ To compare between algorithms and evaluate which performs better, you can train 
 1. Select **Job overview**, then select the **Metrics** tab to review the results for both training components.
 1. Try and determine which model performed better.
 
-## Delete Azure resources
+## Task5:  Delete Azure resources
 
 When you finish exploring Azure Machine Learning, you should delete the resources you've created to avoid unnecessary Azure costs.
 
