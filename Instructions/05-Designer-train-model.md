@@ -81,9 +81,9 @@ When you've created the workspace and necessary compute cluster, you can open th
 1. Select the Azure Machine Learning workspace, and in its **Overview** page, select **Launch studio**. Another tab will open in your browser to open the Azure Machine Learning studio.
 1. Close any pop-ups that appear in the studio.
 1. Within the Azure Machine Learning studio, navigate to the **Compute** page and verify that the compute cluster you created in the previous section exist. The cluster should be idle and have 0 nodes running.
-1. Navigate to the **Designer** page.
+1. On the **Authoring** section under the left  menu Navigate to the **Designer** page.
 1. Select the **Custom** tab at the top of the page.
-1. Create a new empty pipeline using custom components.
+1. Select **+ Create a new pipeline using custom components**.
 1. Change the default pipeline name (**Pipeline-Created-on-*date***) to `Train-Diabetes-Classifier` by selecting the pencil icon on its right.
 
 
@@ -98,21 +98,21 @@ To train a model, you'll need data. You can use any data stored in a datastore o
 
 1. In the left menu, select the **Components** tab.
 1. Drag and drop the **Remove Empty Rows** component on to the canvas, below the **diabetes-folder**.
-1. Connect the output of the data to the input of the new component.
+1. **Connect** the *output* of the data to the *input* of the new component.
 1. Drag and drop the **Normalize Numerical Columns** component on to the canvas, below the **Remove Empty Rows**.
-1. Connect the output of the previous component to the input of the new component.
+1. **Connect** the *output* of the previous component to the *input* of the new component.
 1. Drag and drop the **Train a Decision Tree Classifier Model** component on to the canvas, below the **Normalize Numerical Columns**.
-1. Connect the output of the previous component to the input of the new component.
-1. Select **Configure & Submit** and in the **Set up pipeline job** page create a new experiment and name it `diabetes-designer-pipeline`, then select **Next**.
+1. **Connect** the *output* of the previous component to the *input* of the new component.
+1. Select **Configure & Submit** button and in the **Set up pipeline job** page **create a new** experiment and name it `diabetes-designer-pipeline`, then select **Next**.
 1. On the **Inputs & Outputs** make no changes and select **Next**.
 1. On the **Runtime settings** select **Compute Cluster**, and under the **Select Azure ML compute cluster** select your *aml-cluster*.
 1. Select **Review + Submit** and then select **Submit** to start the pipeline run.
-1. You can check the status of the run by going to the **Pipelines** page and selecting the **Train-Diabetes-Classifier** pipeline.
-1. Wait until all components have successfully completed.
+1. You can **check** the status of the *run* by going to the **Pipelines** page selecting the **Pipeline jobs** tab and choosing the **Train-Diabetes-Classifier** pipeline.
+1. **Wait** until all components have successfully completed.
 
     Submitting the job will initialize the compute cluster. As the compute cluster was idle up until now, it may take some time for the cluster to resize to more than 0 nodes. Once the cluster has resized, it will automatically start running the pipeline.
 
-You'll be able to track the run of each component. When the pipeline fails, you'll be able to explore which component failed and why it failed. Error messages will show in the **Outputs + logs** tab of the job overview.
+You'll be able to track the run of each component. When the pipeline fails, you'll be able to explore which component failed and why it failed. Error messages will show in the **Outputs + logs** tab of the **Job overview**.
 
 ## Task 4:  Train a second model to compare
 
@@ -120,12 +120,12 @@ To compare between algorithms and evaluate which performs better, you can train 
 
 1. Return to the **Designer** and select the **Train-Diabetes-Classifier** pipeline draft.
 1. Add the **Train a Logistic Regression Classifier Model** component to the canvas, next to the other training component.
-1. Connect the output of the **Normalize Numerical Columns** component to the input of the new training component.
+1. **Connect** the output of the **Normalize Numerical Columns** component to the input of the new training component.
 1. At the top, select **Configure & Submit**.
 1. On the **Basics** page, create a new experiment named `designer-compare-classification`, and run it.
 1. Select **Review + Submit** and then select **Submit** to start the pipeline run.
 1. You can check the status of the run by going to the **Pipelines** page and selecting the **Train-Diabetes-Classifier** pipeline with the **designer-compare-classification** experiment.
-1. Wait until all components have successfully completed.  
+1. **Wait** until all components have successfully completed.  
 1. Select **Job overview**, then select the **Metrics** tab to review the results for both training components.
 1. Try and determine which model performed better.
 
