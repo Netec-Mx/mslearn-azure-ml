@@ -9,9 +9,6 @@ Determining the right algorithm and preprocessing transformations for model trai
 
 In this exercise, you'll use automated machine learning to determine the optimal algorithm and preprocessing steps for a model by performing multiple training runs in parallel.
 
-## Before you start
-
-You'll need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative-level access.
 
 ## Provision an Azure Machine Learning workspace
 
@@ -19,7 +16,7 @@ An Azure Machine Learning *workspace* provides a central place for managing all 
 
 You'll use the Azure CLI to provision the workspace and necessary compute, and you'll use the Python SDK to train a classification model with Automated Machine Learning.
 
-### Create the workspace and compute resources
+### Task 1: Create the workspace and compute resources
 
 To create the Azure Machine Learning workspace, a compute instance, and a compute cluster, you'll use the Azure CLI. All necessary commands are grouped in a Shell script for you to execute.
 
@@ -31,7 +28,7 @@ To create the Azure Machine Learning workspace, a compute instance, and a comput
 
     ```azurecli
     rm -r azure-ml-labs -f
-    git clone https://github.com/MicrosoftLearning/mslearn-azure-ml.git azure-ml-labs
+    git clone https://github.com/Netec-Mx/mslearn-azure-ml.git azure-ml-labs
     ```
 
     > Use `SHIFT + INSERT` to paste your copied code into the Cloud Shell.
@@ -76,7 +73,7 @@ To create the Azure Machine Learning workspace, a compute instance, and a comput
     </ol>
     </details>
 
-## Clone the lab materials
+## Task 2:  Clone the lab materials
 
 When you've created the workspace and necessary compute resources, you can open the Azure Machine Learning studio and clone the lab materials into the workspace.
 
@@ -102,7 +99,7 @@ When you've created the workspace and necessary compute resources, you can open 
 
 1. When the command has completed, in the **Files** pane, click **&#8635;** to refresh the view and verify that a new **Users/*your-user-name*/azure-ml-labs** folder has been created.
 
-## Train a classification model with automated machine learning
+## Task 3:  Train a classification model with automated machine learning
 
 Now that you have all the necessary resources, you can run the notebook to configure and submit the Automated Machine Learning job.
 
@@ -125,7 +122,7 @@ Now that you have all the necessary resources, you can run the notebook to confi
     - Wait until a new column **Explained** appears next to the **Algorithm name** column and select **View explanation**. You may need to refresh the algorithm list for this option to appear.
     - Review the dashboard created to understand which features influenced the target value the most.
 
-## Delete Azure resources
+## Task 4:  Delete Azure resources
 
 When you finish exploring Azure Machine Learning, you should delete the resources you've created to avoid unnecessary Azure costs.
 
